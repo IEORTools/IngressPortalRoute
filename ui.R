@@ -14,7 +14,8 @@ shinyUI(pageWithSidebar(
     numericInput("lng", "longitude", -96.745909),
     
     sliderInput("maxPortals", "Max Number of Portals:",
-                min=10, max=20, value=15, step=5)
+                min=10, max=20, value=15, step=5),
+    h5("Portal list updated as of June 2013", align = "left")
   ),
   
   # Show a summary of the dataset and an HTML table with the requested

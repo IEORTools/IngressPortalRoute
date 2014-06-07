@@ -28,8 +28,8 @@ shinyServer(function(input, output) {
   
   optroute <- reactive({
     # get data
-    setwd("/home/larrydag/Restore_500GB/Documents/R-work/Ingress/")
-    x <- read.csv("20130613-Portals - Sheet 1.csv")
+    
+    x <- read.csv("./20130613-Portals - Sheet 1.csv")
     
     # convert data
     x$lat <- sapply(x[,"Lat.Lng"], function(i)   strsplit(as.character(i), ",")[[1]][1])
