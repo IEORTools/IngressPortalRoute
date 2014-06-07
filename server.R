@@ -5,7 +5,7 @@ library(maps)
 library(RgoogleMaps)
 library(sp)
 library(TSP)
-
+ 
 
 #data(zipcode)
 
